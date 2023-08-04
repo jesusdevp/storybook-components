@@ -11,7 +11,7 @@ export interface MyLabelProps {
     /**
         * Is this size of label
     */
-    size: 'normal' | 'h1' | 'h2' | 'h3';
+    size: 'normal' | 'h1' | 'h2' | 'h3' | 'light';
     /**
         * Is this color label
     */

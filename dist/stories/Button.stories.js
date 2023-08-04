@@ -1,11 +1,8 @@
-"use strict";
-Object.defineProperty(exports, "__esModule", { value: true });
-exports.Small = exports.Large = exports.Secondary = exports.Primary = void 0;
-const Button_1 = require("./Button");
+import { Button } from './Button';
 // More on how to set up stories at: https://storybook.js.org/docs/react/writing-stories/introduction#default-export
-const meta = {
+var meta = {
     title: 'Example/Button',
-    component: Button_1.Button,
+    component: Button,
     parameters: {
         // Optional parameter to center the component in the Canvas. More info: https://storybook.js.org/docs/react/configure/story-layout
         layout: 'centered',
@@ -17,26 +14,26 @@ const meta = {
         backgroundColor: { control: 'color' },
     },
 };
-exports.default = meta;
+export default meta;
 // More on writing stories with args: https://storybook.js.org/docs/react/writing-stories/args
-exports.Primary = {
+export var Primary = {
     args: {
         primary: true,
         label: 'Button',
     },
 };
-exports.Secondary = {
+export var Secondary = {
     args: {
         label: 'Button',
     },
 };
-exports.Large = {
+export var Large = {
     args: {
         size: 'large',
         label: 'Button',
     },
 };
-exports.Small = {
+export var Small = {
     args: {
         size: 'small',
         label: 'Button',

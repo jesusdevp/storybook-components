@@ -22,13 +22,11 @@
   ],
   "scripts": {
     "dev": "vite",
-    "build": "yarn clean && tsc && yarn copy-files",
+    "build": "tsc",
     "lint": "eslint . --ext ts,tsx --report-unused-disable-directives --max-warnings 0",
     "preview": "vite preview",
     "storybook": "storybook dev -p 6006",
-    "build-storybook": "storybook build",
-    "clean": "rimraf dist/",
-    "copy-files": "copyfiles -u src/**/*.css dist/"
+    "build-storybook": "storybook build"
   },
   "dependencies": {
     "react": "^18.2.0",
